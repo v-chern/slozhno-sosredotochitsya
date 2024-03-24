@@ -2,4 +2,112 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: url('../images/cover-image-dark.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.section {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header__theme-menu-list {
+  margin-block-start: 75px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 11.5px
+}
+
+.header__theme-menu-item {
+  font-family: var(--main-font), serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--accent-color);
+  line-height: 18px;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  padding: 1.5px 13px;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--accent-color);
+}
+
+.header__title {
+  font-family: var(--main-font), serif;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: bold;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  color: var(--title-color);
+  line-height: 95.7px;
+  margin-block-start: 65px;
+}
+
+.header__paragraph {
+  background-color: var(--accent-color);
+  font-family: var(--main-font), serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--headings-text-color);
+  line-height: 23.4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin: auto;
+  margin-block-start: 55px;
+  margin-block-end: 46px;
+}
+
+.heading {
+  font-family: var(--main-font), serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23.4px;
+  color: var(--headings-text-color);
+}
+
+.content__title {
+  margin-block-start: 40px;
+  color: var(--accent-color);
+}
+
+.content__paragraph-list {
+  list-style-type: none;
+}
+
+.content__paragraph-item {
+  margin-block-start: 20px;
+}
+
+.paragraph-title {
+  background-color: var(--accent-color);
+  margin-block-end: 10px;
+}
+
+.paragraph-text {
+  font-family: var(--main-font), serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 23.4px;
+  color: var(--main-text-color);
+}
+
+.paragraph-link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.paragraph-subtitle {
+  background-color: var(--accent-color);
+  margin-block-end: 10px;
+  font-weight: normal;
 }
