@@ -150,7 +150,7 @@
 
 .content__subtitle {
   background-color: var(--accent-color);
-  margin-block-end: 20px;;
+  margin-block-end: 20px;
 }
 
 .paragraph-title {
@@ -295,6 +295,10 @@
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
+  }
+
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 

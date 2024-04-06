@@ -6,10 +6,11 @@
 
 :root.theme-light {
   /* Дублируем переменные для тёмной темы */
+  /*
   --title-color: #FFC2E6;
   --accent-color: #FF8DCB;
   --headings-text-color: #353430;
-  --main-text-color: #353430;
+  --main-text-color: #353430;*/
 }
 
 .page.theme_light {
