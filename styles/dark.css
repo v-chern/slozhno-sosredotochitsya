@@ -6,6 +6,10 @@
 
 :root.theme-dark {
   /* Дублируем переменные для тёмной темы */
+  --title-color: #DB00FF;
+  --accent-color: #FF0070;
+  --headings-text-color: #000028;
+  --main-text-color: #F1B2CE;
 }
 
 .page.theme_dark {

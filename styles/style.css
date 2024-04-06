@@ -9,14 +9,15 @@
 }
 
 .section {
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-block-end: 40px;
 }
 
 .header {
   padding-block-start: 75px;
   padding-block-end: 66px;
+  height: 100vh;
 }
 
 .decorated-zone {
@@ -34,14 +35,14 @@
 
 .decorated-zone::before {
   bottom: 10px;
-  left: 0px;
+  left: 10px;
   border-left: 1px solid var(--accent-color);
   border-bottom: 1px solid var(--accent-color);
 }
 
 .decorated-zone::after {
   top: 10px;
-  right: 0px;
+  right: 10px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
 }
@@ -49,7 +50,7 @@
 .header__rec-sign {
   position: absolute;
   top: 15px;
-  right: 18px;
+  right: 28px;
 }
 
 .header__rec-sign::before {
@@ -142,10 +143,14 @@
 
 .content__paragraph-list {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.content__paragraph-item:not(:last-child) {
-  margin-block-end: 20px;
+.content__subtitle {
+  background-color: var(--accent-color);
+  margin-block-end: 20px;;
 }
 
 .paragraph-title {
@@ -183,8 +188,7 @@
 }
 
 .footer {
-  padding: 285px 0;
-  margin-block-end: 10px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,8 +206,8 @@
 
 @media (min-width: 768px) {
   .section {
-    margin-left: 20px;
-    margin-right: 20px;  
+    padding-left: 20px;
+    padding-right: 20px;  
     margin-block-end: 60px;
   }
 
@@ -214,19 +218,21 @@
 
   .decorated-zone::before {
     bottom: 20px;
+    left: 20px;
   }
 
   .decorated-zone::after {
     top: 20px;
+    right: 20px
   }
 
   .header__rec-sign {
     top: 25px;
-    right: 20px;
+    right: 40px;
   }
 
   .header__title {
-    font-size: (7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-block-start: 173px;
     margin-block-end: 162px;
   }
@@ -289,3 +295,33 @@
     grid-row-end: 4;
   }
 }
+
+@media (min-width: 1024px)
+{
+  .header {
+    padding-block-start: 20px;
+    padding-block-end: 135px;
+  }
+  .header__theme-menu-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 11.5px
+  }
+
+  .header__title {
+    margin-block-start: 273px;
+    margin-block-end: 114px;
+  }
+
+  .content__text-plain > .content__title {
+    width: 33%;
+  }
+
+  .content__text-plain > .content__paragraph-list {
+    flex-direction: row;
+  }
+
+  .content__text-plain .content__paragraph-item {
+    flex: 1;
+  }
+} 
