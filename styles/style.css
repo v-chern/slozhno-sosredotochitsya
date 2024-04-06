@@ -100,6 +100,15 @@
   text-transform: lowercase;
 }
 
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--dec-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--dec-color);
+}
+
 .header__theme-menu-button_active {
   pointer-events: none;
   border: 1px solid var(--dec-color);
@@ -171,6 +180,15 @@
 .paragraph-link {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.paragraph-link:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--main-text-color);
+}
+
+.paragraph-link:focus-visible {
+  outline: 1px solid var(--main-text-color);
 }
 
 .paragraph-subtitle {
