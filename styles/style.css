@@ -49,6 +49,7 @@
 }
 
 .header__rec-sign {
+  display: var(--rec-sign-display);
   position: absolute;
   top: 15px;
   right: 28px;

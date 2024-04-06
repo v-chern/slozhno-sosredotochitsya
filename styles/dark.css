@@ -8,8 +8,13 @@
   /* Дублируем переменные для тёмной темы */
   --title-color: #DB00FF;
   --accent-color: #FF0070;
+  --dec-color: #FF0070;
   --headings-text-color: #000028;
+  --headings-bg-color: #FF0070;
   --main-text-color: #F1B2CE;
+  --bg-color: #000028;
+  --bg-image: url('../images/cover-image-dark.png');
+  --rec-sign-display: block;
 }
 
 .page.theme_dark {
@@ -17,5 +22,4 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  background-image: url('../images/cover-image-dark.png');
 }
