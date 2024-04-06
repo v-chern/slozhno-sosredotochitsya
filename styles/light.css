@@ -6,14 +6,14 @@
 
 :root.theme-light {
   /* Дублируем переменные для тёмной темы */
-  --title-color: #DB00FF;
+  --title-color: #FFC2E6;
   --accent-color: #FF0070;
-  --dec-color: #FF0070;
-  --headings-text-color: #000028;
-  --headings-bg-color: #FF0070;
-  --main-text-color: #F1B2CE;
-  --bg-color: #000028;
-  --bg-image: url('../images/cover-image-dark.png');
+  --dec-color: #353430;
+  --headings-text-color: #353430;
+  --headings-bg-color: #FF8DCB;
+  --main-text-color: #353430;
+  --bg-color: #FFF1F7;
+  --bg-image: url('../images/cover-image-light.png');
   --rec-sign-display: none;
 }
 
@@ -34,4 +34,16 @@
 }
 
 @media (prefers-color-scheme: light) {
+  :root {
+    /* Дублируем переменные для тёмной темы */
+    --title-color: #FFC2E6;
+    --accent-color: #FF0070;
+    --dec-color: #353430;
+    --headings-text-color: #353430;
+    --headings-bg-color: #FF8DCB;
+    --main-text-color: #353430;
+    --bg-color: #FFF1F7;
+    --bg-image: url('../images/cover-image-light.png');
+    --rec-sign-display: none;
+  }
 }
