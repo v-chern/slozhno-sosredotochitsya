@@ -2,10 +2,11 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-image: url('../images/cover-image-dark.png');
+  background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-color: var(--bg-color);
 }
 
 .section {
@@ -69,9 +70,9 @@
   top: 4.5px;
   width: 9px;
   height: 9px;
-  background-color: var(--accent-color);
+  background-color: var(--dec-color);
   border-radius: 50%;
-  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  box-shadow: 0px 0px 4px 2px var(--dec-color);
 }
 
 .header__theme-menu-list {
@@ -86,7 +87,7 @@
   font-family: var(--main-font), serif;
   font-size: 18px;
   font-weight: normal;
-  color: var(--accent-color);
+  color: var(--dec-color);
   line-height: 18px;
 }
 
@@ -100,7 +101,7 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--dec-color);
 }
 
 .header__title {
@@ -123,7 +124,7 @@
 }
 
 .header__paragraph {
-  background-color: var(--accent-color);
+  background-color: var(--headings-bg-color);
   width: 100%;
 }
 
@@ -137,7 +138,7 @@
 }
 
 .content__title {
-  color: var(--accent-color);
+  color: var(--dec-color);
   margin-block-end: 20px;
 }
 
@@ -149,12 +150,12 @@
 }
 
 .content__subtitle {
-  background-color: var(--accent-color);
+  background-color: var(--headings-bg-color);
   margin-block-end: 20px;
 }
 
 .paragraph-title {
-  background-color: var(--accent-color);
+  background-color: var(--headings-bg-color);
   margin-block-end: 10px;
 }
 
@@ -172,7 +173,7 @@
 }
 
 .paragraph-subtitle {
-  background-color: var(--accent-color);
+  background-color: var(--headings-bg-color);
   margin-block-end: 10px;
   font-weight: normal;
 }
