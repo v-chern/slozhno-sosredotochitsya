@@ -34,7 +34,6 @@
   width: 25px;
 }
 
-
 .decorated-zone::before {
   bottom: 10px;
   left: 10px;
@@ -59,7 +58,7 @@
 .header__rec-sign::before {
   content: "REC";
   margin-right: 10px;
-  font-family: var(--main-font), serif;
+  font-family: var(--main-font), monospace;
   font-size: 18px;
   font-weight: normal;
   color: var(--accent-color);
@@ -86,7 +85,7 @@
 }
 
 .header__theme-menu-item {
-  font-family: var(--main-font), serif;
+  font-family: var(--main-font), monospace;
   font-size: 18px;
   font-weight: normal;
   color: var(--dec-color);
@@ -116,7 +115,7 @@
 }
 
 .header__title {
-  font-family: var(--main-font), serif;
+  font-family: var(--main-font), monospace;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: bold;
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -127,7 +126,7 @@
 }
 
 .heading {
-  font-family: var(--main-font), serif;
+  font-family: var(--main-font), monospace;
   font-size: 18px;
   font-weight: bold;
   line-height: 23.4px;
@@ -171,7 +170,7 @@
 }
 
 .paragraph-text {
-  font-family: var(--main-font), serif;
+  font-family: var(--main-font), monospace;
   font-size: 18px;
   font-weight: normal;
   line-height: 23.4px;
@@ -205,7 +204,7 @@
 
 .pictures__grid {
   display: grid;
-  gap: 10px
+  gap: 10px;
 }
 
 .pictures__grid-image {
@@ -222,7 +221,7 @@
 }
 
 .footer__title {
-  font-family: var(--main-font), serif;
+  font-family: var(--main-font), monospace;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: bold;
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -231,7 +230,7 @@
   margin: auto;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .section {
     padding-left: 20px;
     padding-right: 20px;
@@ -251,7 +250,7 @@
 
   .decorated-zone::after {
     top: 20px;
-    right: 20px
+    right: 20px;
   }
 
   .header__rec-sign {
@@ -278,7 +277,7 @@
 
   .content__text-grid {
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
+    gap: 10px;
   }
 
   .content__text-plain > .content__title {
@@ -334,7 +333,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .header {
     padding-block-start: 20px;
     padding-block-end: 135px;
@@ -344,7 +343,7 @@
   .header__theme-menu-list {
     flex-direction: row;
     justify-content: center;
-    gap: 11.5px
+    gap: 11.5px;
   }
 
   .header__title {

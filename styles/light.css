@@ -4,7 +4,7 @@
   переключая тему
 */
 
-:root.theme-light {
+:root.theme_light {
   /* Дублируем переменные для тёмной темы */
   --title-color: #FFC2E6;
   --accent-color: #FF0070;
