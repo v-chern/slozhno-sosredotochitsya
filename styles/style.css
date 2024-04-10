@@ -367,6 +367,10 @@
     margin-block-end: 114px;
   }
 
+  .content__text-grid {
+    grid-template-columns: 1fr 2.06fr;
+  }
+
   .content__text-plain > .content__title {
     width: 33%;
   }
