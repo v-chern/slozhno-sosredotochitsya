@@ -4,20 +4,6 @@
   переключая тему
 */
 
-:root.theme_light {
-  /* Дублируем переменные для тёмной темы */
-  --title-color: #FFC2E6;
-  --accent-color: #FF0070;
-  --dec-color: #353430;
-  --hover-brd-color: #32312D66;
-  --headings-text-color: #353430;
-  --headings-bg-color: #FF8DCB;
-  --main-text-color: #353430;
-  --bg-color: #FFF1F7;
-  --bg-image: url('../images/cover-image-light.png');
-  --rec-sign-display: none;
-}
-
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -30,6 +16,7 @@
   --headings-text-color: #353430;
   --headings-bg-color: #FF8DCB;
   --main-text-color: #353430;
+  --link-shadow-color: #FF8DCB;
   --bg-color: #FFF1F7;
   --bg-image: url('../images/cover-image-light.png');
   --rec-sign-display: none;
@@ -45,6 +32,7 @@
     --headings-text-color: #353430;
     --headings-bg-color: #FF8DCB;
     --main-text-color: #353430;
+    --link-shadow-color: #FF8DCB;
     --bg-color: #FFF1F7;
     --bg-image: url('../images/cover-image-light.png');
     --rec-sign-display: none;
